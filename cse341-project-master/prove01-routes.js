@@ -1,5 +1,7 @@
+const fs = require('fs');
 
-function rqListener(req, res){  
+
+const rqHandler = (req, res) => {  
         const url = req.url;
         if (url === '/') {
          res.setHeader('Content-Type', 'text/html');
@@ -32,4 +34,4 @@ function rqListener(req, res){
         }
     };
 
-   
+    module.exports = rqHandler;
