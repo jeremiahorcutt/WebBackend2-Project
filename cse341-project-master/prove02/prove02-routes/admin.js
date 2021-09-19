@@ -2,7 +2,7 @@ const path = require('path');
 
 const express = require('express');
 
-const rootDir = require('../util/path');
+const rootDir = require('../prove02-util/path');
 const { runInNewContext } = require('vm');
 
 const router = express.Router();
