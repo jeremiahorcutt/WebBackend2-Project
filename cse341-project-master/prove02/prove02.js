@@ -2,8 +2,8 @@ const path = require('path');
 const bodyParser = require('body-parser');
 const express = require('express');
 
-const adminData = require('./routes/admin');
-const shopRoutes = require('./routes/shop');
+const adminData = require('./prove02-routes/admin');
+const shopRoutes = require('./prove02-routes/shop');
 
 const app = express();
 
@@ -11,7 +11,7 @@ app.set('view engine', 'ejs');
 app.set('views', 'views');
 
 app.use(bodyParser.urlencoded({extended: false}));
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'prove02-public')));
 
 app.use('/admin', adminData.routes);
 app.use(shopRoutes);
