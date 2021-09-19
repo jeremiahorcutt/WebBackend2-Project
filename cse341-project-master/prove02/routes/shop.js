@@ -3,7 +3,7 @@ const path = require('path');
 const express = require('express');
 
 
-const rootDir = require('../prove02-util/path');
+const rootDir = require('../util/path');
 
 const router = express.Router();
 const adminData = require('./admin');
