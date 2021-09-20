@@ -35,3 +35,6 @@
     font-size:.8em;
     text-decoration:underline;
 }
+.card__image{
+    border:1px solid #441c79;
+}
