@@ -18,5 +18,4 @@ router.get('/', (req, res, next) => {
     productCSS: true
   });
 });
-
   module.exports = router;
