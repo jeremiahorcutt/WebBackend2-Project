@@ -9,7 +9,7 @@ router.get('/', (req, res, next) => {
   res.render('pages', {
     title: 'Team Activity 02',
     path: '/ta02', // For pug, EJS
-    users: users
+    username: users
   });
 });
 
