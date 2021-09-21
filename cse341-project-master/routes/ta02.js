@@ -9,8 +9,7 @@ router.get('/', (req, res, next) => {
   res.render('pages', {
     title: 'Team Activity 02',
     path: '/ta02', // For pug, EJS
-    activeTA03: true, // For HBS
-    contentCSS: true, // For HBS
+    users: users
   });
 });
 
