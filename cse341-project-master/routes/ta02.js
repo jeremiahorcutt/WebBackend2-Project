@@ -16,6 +16,7 @@ router.get('/', (req, res, next) => {
 
 router.post('/addUser', (req, res, next) => {
   users.push({username: req.body.username});
-})
+  res.redirect('/');
+});
 
 module.exports = router;
