@@ -6,7 +6,7 @@ const router = express.Router();
 let users = [];
 
 router.get('/', (req, res, next) => {
-  res.render('pages', {
+  res.render('pages/ta02', {
     title: 'Team Activity 02',
     path: '/ta02', // For pug, EJS
     username: users
