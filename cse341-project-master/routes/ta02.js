@@ -3,6 +3,8 @@
 const express = require('express');
 const router = express.Router();
 
+let users = [];
+
 router.get('/', (req, res, next) => {
   res.render('pages', {
     title: 'Team Activity 02',
@@ -11,5 +13,9 @@ router.get('/', (req, res, next) => {
     contentCSS: true, // For HBS
   });
 });
+
+router.post('/addUser', (req, res, next) => {
+  users.push({username: req.body.username});
+})
 
 module.exports = router;
