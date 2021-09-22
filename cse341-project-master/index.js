@@ -39,7 +39,7 @@ app
   .use('/ta02', ta02Routes)
   .use('/ta03', ta03Routes)
   .use('/ta04', ta04Routes)
-  .use('/prove02', prove02.routes)
+  .use('/', prove02.routes)
   .get('/', (req, res, next) => {
     // This is the primary index, always handled last.
     res.render('pages/index', {
