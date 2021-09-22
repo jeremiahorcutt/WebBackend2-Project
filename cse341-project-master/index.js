@@ -27,7 +27,7 @@ const prove02 = require('./prove02/routes/admin');
 
 app
   .use(express.static(path.join(__dirname, 'public')))
-  .set('views', path.join(__dirname, 'prove02/views'))
+  .set('views', path.join(__dirname, 'views'))
   .set('view engine', 'ejs')
   // For view engine as Pug
   //.set('view engine', 'pug') // For view engine as PUG.
