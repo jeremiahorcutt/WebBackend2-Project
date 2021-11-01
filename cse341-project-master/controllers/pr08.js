@@ -1,4 +1,3 @@
-// Controller for W08
 const https = require('https');
 
 const items = 10; 
