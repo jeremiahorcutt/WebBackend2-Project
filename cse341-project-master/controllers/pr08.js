@@ -15,14 +15,14 @@ const renderIndex = (req, res, json) => {
 
   let stuff = {
     data: filteredData.slice(indexStart, indexEnd), 
-    path: 'proveAssignments/03',
-    title: 'Lesson 3 Prove Assignment',
+    path: '/ta03',
+    title: 'Lesson 8 Prove Assignment',
     searchedValue: searchedValue,
     page: page,
     numPages: Math.ceil(filteredData.length / items),
   };
 
-  res.render('pages/proveAssignments/pr08', stuff);
+  res.render('pages/pr08', stuff);
 };
 
 exports.processJson = (req, res, next) => {
